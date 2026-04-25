@@ -10,8 +10,9 @@ if os.path.exists('streamlit_thesys'):
 else:
     print("WARNING: streamlit_thesys folder NOT FOUND in root!")
 
-# Force current directory into path
+# Force current directory and the mohamed_shabasy directory into path
 sys.path.insert(0, os.getcwd())
+sys.path.insert(0, os.path.join(os.getcwd(), "mohamed_shabasy"))
 
 import streamlit as st
 from streamlit_thesys import visualize, render_response
